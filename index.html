@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
     <title>Todo App</title>
   </head>
-  <body>
-    <header class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <body class="body">
+    <header class="header">
+      <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix" class="header__image">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="centered-main-page-element">
-      <section id="topSectionForAddingElementToList">
+    <main class="main-page">
+      <section class="add-section">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+        <div class="add-section__task-wrapper">
+          <input id="new-task"class="add-section__task" type="text">
           <button>Add</button>
         </div>
       </section>
-      <section>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
+      <section class="incomplete-section">
+        <h3 class="incomplete-section__title">Todo</h3>
+        <ul class="incomplete-section__tasks">
           <li>
             <input type="checkbox">
             <label class="task">Pay Bills</label>
@@ -44,8 +44,8 @@
           </li>
         </ul>
         </section>
-        <section>
-          <h3>Completed</h3>
+        <section class="complete-section">
+          <h3 class="complete-section__title">Completed</h3>
           <ul id="completed-tasks">
             <li>
               <input type="checkbox" checked>
