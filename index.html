@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Todo App</title>
   </head>
   <body class="body">
     <header class="header">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix" class="header__image">
+      <img src="./assets/images/eisenhower-matrix.jpg" alt="Eisenhower Matrix" class="header__image">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main-page">
@@ -26,20 +26,20 @@
         <ul class="incomplete-section__tasks">
           <li class="task">
             <input type="checkbox" class="task__checkbox">
-            <label class="task__label">Pay Bills</label>
+            <span class="task__label">Pay Bills</span>
             <input type="text" class="task__input">
             <button class="task__edit-button">Edit</button>
             <button class="task__delete-button">
-              <img src="./remove.svg" alt="Remove task" class="task__delete-button__image">
+              <img src="./assets/icons/remove.svg" alt="Remove task" class="task__delete-button__image">
             </button>
           </li>
           <li class="task editMode">
             <input type="checkbox" class="task__checkbox">
-            <label class="task__label">Go Shopping</label>
+            <span class="task__label">Go Shopping</span>
             <input type="text" value="Go Shopping" class="task__input">
             <button class="task__edit-button">Save</button>
             <button class="task__delete-button">
-              <img src="./remove.svg" alt="Remove task" class="task__delete-button__image">
+              <img src="./assets/icons/remove.svg" alt="Remove task" class="task__delete-button__image">
             </button>
           </li>
         </ul>
@@ -49,16 +49,16 @@
           <ul class="complete-section__tasks" id="completed-tasks">
             <li class="task">
               <input type="checkbox" class="task__checkbox" checked>
-              <label class="task__label">See the Doctor</label>
+              <span class="task__label">See the Doctor</span>
               <input type="text" class="task__input">
               <button class="task__edit-button">Edit</button>
               <button class="task__delete-button">
-                <img src="./remove.svg" alt="Remove task" class="task__delete-button__image">
+                <img src="./assets/icons/remove.svg" alt="Remove task" class="task__delete-button__image">
               </button>
             </li>
           </ul>
         </section>
     </main>
-    <script src="app.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
