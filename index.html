@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Todo App</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <img src="./assets/images/eisenhower-matrix.jpg" alt="Eisenhower Matrix" class="header__image">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main-page">
+      <section class="add-section">
+        <h3 class="add-section__title">Add Item</h3>
+        <div class="add-section__task-wrapper">
+          <input class="add-section__task" type="text">
+          <button class="add-section__add-button">Add</button>
+        </div>
+      </section>
+      <section class="incomplete-section">
+        <h3 class="incomplete-section__title">Todo</h3>
+        <ul class="incomplete-section__tasks">
+          <li class="task">
+            <input type="checkbox" class="task__checkbox">
+            <span class="task__label">Pay Bills</span>
+            <input type="text" class="task__input">
+            <button class="task__edit-button">Edit</button>
+            <button class="task__delete-button">
+              <img src="./assets/icons/remove.svg" alt="Remove task" class="task__delete-button__image">
+            </button>
+          </li>
+          <li class="task editMode">
+            <input type="checkbox" class="task__checkbox">
+            <span class="task__label">Go Shopping</span>
+            <input type="text" value="Go Shopping" class="task__input">
+            <button class="task__edit-button">Save</button>
+            <button class="task__delete-button">
+              <img src="./assets/icons/remove.svg" alt="Remove task" class="task__delete-button__image">
+            </button>
+          </li>
+        </ul>
+        </section>
+        <section class="complete-section">
+          <h3 class="complete-section__title">Completed</h3>
+          <ul class="complete-section__tasks" id="completed-tasks">
+            <li class="task">
+              <input type="checkbox" class="task__checkbox" checked>
+              <span class="task__label">See the Doctor</span>
+              <input type="text" class="task__input">
+              <button class="task__edit-button">Edit</button>
+              <button class="task__delete-button">
+                <img src="./assets/icons/remove.svg" alt="Remove task" class="task__delete-button__image">
+              </button>
+            </li>
+          </ul>
+        </section>
+    </main>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
